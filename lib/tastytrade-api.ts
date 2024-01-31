@@ -35,6 +35,7 @@ export default class TastytradeClient {
   public transactionsService: TransactionsService
   public watchlistsService: WatchlistsService
 
+  // Test
   // public readonly httpClient: TastytradeHttpClient
   // public readonly accountStreamer: AccountStreamer
   // public readonly sessionService: SessionService
