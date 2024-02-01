@@ -12,3 +12,5 @@ services > tasty-dirk-api > lib > market-data-streamer.ts line 350: "acceptAggre
 This "acceptAggregationPeriod" does nothing right now (2/1/2024) the dxfeed server defaults/overrides it to 0.5 seconds.
 
 https://demo.dxfeed.com/dxlink-ws/debug/#/protocol
+
+.
