@@ -1,0 +1,14 @@
+The big idea here is to run tasty-dirk-api from inside drootracker's src folder to
+avoid having to set up webpack to include files outside of src (which I could not get to work).
+
+Place services > tasty-dirk-api in the same folder in drootracker.
+npm install inside tasty-dirk-api
+
+Place (or copy the relevant content) of craco.config.js into the same file in drootracker.
+
+The key lines to edit for rate limiting are in
+services > tasty-dirk-api > lib > market-data-streamer.ts line 350: "acceptAggregationPeriod": 10,
+
+This "acceptAggregationPeriod" does nothing right now (2/1/2024) the dxfeed server defaults/overrides it to 0.5 seconds.
+
+https://demo.dxfeed.com/dxlink-ws/debug/#/protocol
